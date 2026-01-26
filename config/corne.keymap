@@ -8,10 +8,10 @@
 
         Base {
             bindings = <
-&none  &kp Q               &kp W           &kp E                    &kp R             &kp T          &kp Y        &kp U            &kp I                              &kp O    &kp P                &none
-&none  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D           &mt LEFT_SHIFT F  &kp G          &kp H        &kp J            &kp K                              &kp L    &mt APOS SEMICOLON   &none
-&none  &kp Z               &kp X           &kp C                    &kp V             &kp B          &kp N        &kp M            &kp COMMA                          &kp DOT  &mt BACKSLASH SLASH  &none
-                                           &mt LS(LA(LCTRL)) GRAVE  &lt 2 TAB         &lt 4 SPACE    &lt 5 ENTER  &lt 1 BACKSPACE  &mt RS(RA(RG(RIGHT_CONTROL))) ESC
+&none  &kp Q               &kp W           &kp E                    &kp R             &kp T          &kp Y        &kp U              &kp I                              &kp O            &kp P                &none
+&none  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D           &mt LEFT_SHIFT F  &kp G          &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_GUI K                    &mt RIGHT_ALT L  &mt APOS SEMICOLON   &none
+&none  &kp Z               &kp X           &kp C                    &kp V             &kp B          &kp N        &kp M              &kp COMMA                          &kp DOT          &mt BACKSLASH SLASH  &none
+                                           &mt LS(LA(LCTRL)) GRAVE  &lt 2 TAB         &lt 4 SPACE    &lt 5 ENTER  &lt 1 BACKSPACE    &mt RS(RA(RG(RIGHT_CONTROL))) ESC
             >;
         };
 
@@ -44,10 +44,10 @@
 
         Others {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &bt BT_NXT      &bt BT_PRV    &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans          &trans        &trans        &trans        &trans
-                        &trans  &trans  &trans    &bt BT_CLR    &bt BT_CLR_ALL  &trans
+&trans  &kp LG(NUMBER_1)      &kp LG(NUMBER_2)      &kp LG(NUMBER_3)      &kp LG(NUMBER_4)      &kp LG(N5)        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4   &trans
+&trans  &kp LS(LG(NUMBER_1))  &kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))    &bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &bt BT_CLR_ALL  &bt BT_DISC 0  &trans
+&trans  &trans                &trans                &trans                &trans                &trans            &trans        &trans        &trans        &trans          &trans         &trans
+                                                    &trans                &trans                &trans            &trans        &trans        &trans
             >;
         };
 
