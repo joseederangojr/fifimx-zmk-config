@@ -9,6 +9,12 @@
     retro-tap;
 };
 
+&lt {
+    tapping-term-ms = <220>;
+    quick-tap-ms = <150>;
+    retro-tap;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
