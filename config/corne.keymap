@@ -2,6 +2,13 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <220>;
+    quick-tap-ms = <150>;
+    retro-tap;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -27,7 +34,7 @@
         Symbol {
             bindings = <
 &trans  &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)    &kp MINUS         &kp EQUAL          &kp BACKSLASH  &kp RS(LEFT_BRACKET)  &kp RS(RIGHT_BRACKET)  &trans
-&trans  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RPAR)     &kp LEFT          &kp DOWN           &kp UP         &kp RIGHT             &kp SINGLE_QUOTE       &trans
+&trans  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RPAR)     &trans            &kp LEFT           &kp DOWN       &kp UP_ARROW          &kp RIGHT              &trans
 &trans  &trans         &trans        &trans         &kp LS(EQUAL)  &kp LS(MINUS)    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RS(COMMA)  &kp RS(PERIOD)        &kp RS(SLASH)          &trans
                                      &trans         &trans         &trans           &trans            &trans             &trans
             >;
